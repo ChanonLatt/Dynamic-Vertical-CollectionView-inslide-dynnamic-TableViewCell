@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04509ABD27E1E03B001FB13A /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04509ABC27E1E03B001FB13A /* AlignedCollectionViewFlowLayout.swift */; };
+		04509AC127E1E0EB001FB13A /* RecommendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04509ABF27E1E0EB001FB13A /* RecommendSearchTableViewCell.swift */; };
+		04509AC227E1E0EB001FB13A /* RecommendSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04509AC027E1E0EB001FB13A /* RecommendSearchTableViewCell.xib */; };
+		04509AC527E1E109001FB13A /* RecommendSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04509AC327E1E109001FB13A /* RecommendSearchCollectionViewCell.swift */; };
+		04509AC627E1E109001FB13A /* RecommendSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04509AC427E1E109001FB13A /* RecommendSearchCollectionViewCell.xib */; };
 		04AC95EE27E081AA0058693F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC95ED27E081AA0058693F /* AppDelegate.swift */; };
 		04AC95F027E081AA0058693F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC95EF27E081AA0058693F /* SceneDelegate.swift */; };
 		04AC95F227E081AA0058693F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC95F127E081AA0058693F /* ViewController.swift */; };
@@ -17,7 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04AC95EA27E081AA0058693F /* Vertical CollectionView inslide TableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vertical CollectionView inslide TableViewCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04509ABC27E1E03B001FB13A /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		04509ABF27E1E0EB001FB13A /* RecommendSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendSearchTableViewCell.swift; sourceTree = "<group>"; };
+		04509AC027E1E0EB001FB13A /* RecommendSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendSearchTableViewCell.xib; sourceTree = "<group>"; };
+		04509AC327E1E109001FB13A /* RecommendSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		04509AC427E1E109001FB13A /* RecommendSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		04AC95EA27E081AA0058693F /* Dynamic Vertical CollectionView inslide dynnamic TableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Vertical CollectionView inslide dynnamic TableViewCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AC95ED27E081AA0058693F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AC95EF27E081AA0058693F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04AC95F127E081AA0058693F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +60,7 @@
 		04AC95EB27E081AA0058693F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04AC95EA27E081AA0058693F /* Vertical CollectionView inslide TableViewCell.app */,
+				04AC95EA27E081AA0058693F /* Dynamic Vertical CollectionView inslide dynnamic TableViewCell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +68,14 @@
 		04AC95EC27E081AA0058693F /* Vertical CollectionView inslide TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				04AC95F127E081AA0058693F /* ViewController.swift */,
+				04509ABF27E1E0EB001FB13A /* RecommendSearchTableViewCell.swift */,
+				04509AC027E1E0EB001FB13A /* RecommendSearchTableViewCell.xib */,
+				04509AC327E1E109001FB13A /* RecommendSearchCollectionViewCell.swift */,
+				04509AC427E1E109001FB13A /* RecommendSearchCollectionViewCell.xib */,
 				04AC95ED27E081AA0058693F /* AppDelegate.swift */,
 				04AC95EF27E081AA0058693F /* SceneDelegate.swift */,
-				04AC95F127E081AA0058693F /* ViewController.swift */,
+				04509ABC27E1E03B001FB13A /* AlignedCollectionViewFlowLayout.swift */,
 				04AC95F327E081AA0058693F /* Main.storyboard */,
 				04AC95F927E081AC0058693F /* Assets.xcassets */,
 				04AC95FB27E081AC0058693F /* LaunchScreen.storyboard */,
@@ -73,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04AC95E927E081AA0058693F /* Vertical CollectionView inslide TableViewCell */ = {
+		04AC95E927E081AA0058693F /* Dynamic Vertical CollectionView inslide dynnamic TableViewCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04AC960127E081AC0058693F /* Build configuration list for PBXNativeTarget "Vertical CollectionView inslide TableViewCell" */;
+			buildConfigurationList = 04AC960127E081AC0058693F /* Build configuration list for PBXNativeTarget "Dynamic Vertical CollectionView inslide dynnamic TableViewCell" */;
 			buildPhases = (
 				04AC95E627E081AA0058693F /* Sources */,
 				04AC95E727E081AA0058693F /* Frameworks */,
@@ -85,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = "Vertical CollectionView inslide TableViewCell";
+			name = "Dynamic Vertical CollectionView inslide dynnamic TableViewCell";
 			productName = "Vertical CollectionView inslide TableViewCell";
-			productReference = 04AC95EA27E081AA0058693F /* Vertical CollectionView inslide TableViewCell.app */;
+			productReference = 04AC95EA27E081AA0058693F /* Dynamic Vertical CollectionView inslide dynnamic TableViewCell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04AC95E527E081AA0058693F /* Build configuration list for PBXProject "Vertical CollectionView inslide TableViewCell" */;
+			buildConfigurationList = 04AC95E527E081AA0058693F /* Build configuration list for PBXProject "Dynamic Vertical CollectionView inslide dynnamic TableViewCell" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04AC95E927E081AA0058693F /* Vertical CollectionView inslide TableViewCell */,
+				04AC95E927E081AA0058693F /* Dynamic Vertical CollectionView inslide dynnamic TableViewCell */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04509AC227E1E0EB001FB13A /* RecommendSearchTableViewCell.xib in Resources */,
 				04AC95FD27E081AC0058693F /* LaunchScreen.storyboard in Resources */,
+				04509AC627E1E109001FB13A /* RecommendSearchCollectionViewCell.xib in Resources */,
 				04AC95FA27E081AC0058693F /* Assets.xcassets in Resources */,
 				04AC95F527E081AA0058693F /* Main.storyboard in Resources */,
 			);
@@ -141,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04509AC127E1E0EB001FB13A /* RecommendSearchTableViewCell.swift in Sources */,
+				04509AC527E1E109001FB13A /* RecommendSearchCollectionViewCell.swift in Sources */,
 				04AC95F227E081AA0058693F /* ViewController.swift in Sources */,
 				04AC95EE27E081AA0058693F /* AppDelegate.swift in Sources */,
 				04AC95F027E081AA0058693F /* SceneDelegate.swift in Sources */,
+				04509ABD27E1E03B001FB13A /* AlignedCollectionViewFlowLayout.swift in Sources */,
 				04AC95F827E081AA0058693F /* Vertical_CollectionView_inslide_TableViewCell.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04AC95E527E081AA0058693F /* Build configuration list for PBXProject "Vertical CollectionView inslide TableViewCell" */ = {
+		04AC95E527E081AA0058693F /* Build configuration list for PBXProject "Dynamic Vertical CollectionView inslide dynnamic TableViewCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AC95FF27E081AC0058693F /* Debug */,
@@ -354,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04AC960127E081AC0058693F /* Build configuration list for PBXNativeTarget "Vertical CollectionView inslide TableViewCell" */ = {
+		04AC960127E081AC0058693F /* Build configuration list for PBXNativeTarget "Dynamic Vertical CollectionView inslide dynnamic TableViewCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04AC960227E081AC0058693F /* Debug */,

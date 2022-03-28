@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RecommendSearchCollectionViewCell" customModule="Dynamic_Vertical_CollectionView_inslide_dynnamic_TableViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Sl-dc-V2z">
+                        <rect key="frame" x="0.0" y="0.0" width="334" height="122"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lC-zb-SV8">
+                                <rect key="frame" x="8" y="8" width="318" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="318" id="3mZ-pg-odr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="9lC-zb-SV8" firstAttribute="top" secondItem="5Sl-dc-V2z" secondAttribute="top" constant="8" id="5YF-FJ-rCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9lC-zb-SV8" secondAttribute="trailing" constant="8" id="PCu-Mf-g79"/>
+                            <constraint firstItem="9lC-zb-SV8" firstAttribute="leading" secondItem="5Sl-dc-V2z" secondAttribute="leading" constant="8" id="V7i-xZ-T6E"/>
+                            <constraint firstAttribute="bottom" secondItem="9lC-zb-SV8" secondAttribute="bottom" constant="8" id="h9a-gH-Ef7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Sl-dc-V2z" secondAttribute="trailing" id="Ikl-rD-6pA"/>
+                <constraint firstItem="5Sl-dc-V2z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OLh-aq-W9q"/>
+                <constraint firstAttribute="bottom" secondItem="5Sl-dc-V2z" secondAttribute="bottom" id="SMU-UF-pkc"/>
+                <constraint firstItem="5Sl-dc-V2z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T2d-fS-dBp"/>
+            </constraints>
+            <size key="customSize" width="334" height="122"/>
+            <connections>
+                <outlet property="containerView" destination="5Sl-dc-V2z" id="NWf-15-Ygj"/>
+                <outlet property="contentWidthConstraint" destination="3mZ-pg-odr" id="pSb-rQ-9si"/>
+                <outlet property="labelTitle" destination="9lC-zb-SV8" id="2B3-d7-nP6"/>
+            </connections>
+            <point key="canvasLocation" x="343.47826086956525" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
