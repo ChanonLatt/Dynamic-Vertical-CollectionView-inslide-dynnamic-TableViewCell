@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecommendSearchCollectionViewCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var contentWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var labelTitle: UILabel!

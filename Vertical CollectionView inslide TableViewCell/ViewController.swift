@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  CollectionViewInTableViewCell
+//  Vertical CollectionView inslide TableViewCell
 //
-//  Created by Angela Cartagena on 7/06/2016.
-//  Copyright © 2016 Airtasker. All rights reserved.
+//  Created by Chanon Latt on 3/16/22.
 //
 
 import UIKit
@@ -15,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.register(UINib(nibName: "RecommendSearchTableViewCell", bundle: nil),
-                           forCellReuseIdentifier: "RecommendSearchTableViewCell")
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil),
+                           forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -42,7 +41,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendSearchTableViewCell") as! RecommendSearchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         return cell
     }
 }

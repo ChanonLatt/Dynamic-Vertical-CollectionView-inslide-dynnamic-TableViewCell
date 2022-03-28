@@ -8,7 +8,7 @@
 import UIKit
 
 
-class RecommendSearchTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class TableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var collectionViewBottomConstraint: NSLayoutConstraint!
@@ -29,7 +29,7 @@ class RecommendSearchTableViewCell: UITableViewCell, UICollectionViewDelegate, U
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "RecommendSearchCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RecommendSearchCollectionViewCell")
+        collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
         
         if let layout = collectionView.collectionViewLayout as? AlignedCollectionViewFlowLayout {
             layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
@@ -57,7 +57,7 @@ class RecommendSearchTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendSearchCollectionViewCell", for: indexPath) as! RecommendSearchCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.labelTitle.text = staticData[indexPath.row]
         cell.contentWidthConstraint.constant = collectionView.frame.width
         return cell
